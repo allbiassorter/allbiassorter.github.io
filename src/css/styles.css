@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Light mode theme */
+.theme-light {
+  --bg-color: #fafafa;
+  --f-color: #121212;
+  --text-grad-1: #035afc;
+  --text-grad-2: #03fca9;
+  --toggle-bg: #ddd;
+  --toggle-switch-bg: #fff;
+}
+
+/* Dark mode theme */
+.theme-dark {
+  --bg-color: #121212;
+  --f-color: #fafafa;
+  --text-grad-1: #fc036f;
+  --text-grad-2: #fc9d03;
+  --toggle-bg: #222;
+  --toggle-switch-bg: #555;
+}
+
+.container {
+  display: flex; /* Use the flex layout to display the child elements in a row */
+  flex-direction: row; /* Display the child elements in a row */
+  justify-content: center; /* Center the child elements horizontally */
+}
+
+.picture {
+  border: 1px solid black; /* Add a black border around the picture */
+  display: block; /* Make the picture a block-level element */
+  margin: 0 auto; /* Center the picture horizontally */
+  cursor: pointer; /* Add a pointer cursor when hovering over the picture */
+  margin: 0 5px;
+}
+
+.wrapper {
+  width: 211px;
+  margin: 2em auto;
+  margin-bottom: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+/* Container */
+#vimberly {
+  background: var(--bg-color);
+  color: var(--f-color);
+  transition: background 450ms ease-in-out;
+}
+
+/* Button toggle */
+#toggle {
+  border: none;
+  padding: 1rem;
+  background: var(--toggle-bg);
+  color: var(--f-color);
+  border-radius: 5x;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 0 auto; /* Center the logo horizontally */
+  display: block; /* Display the logo as a block element */
+}
